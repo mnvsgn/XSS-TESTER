@@ -48,11 +48,3 @@ Contributions are welcome! Please open issues or submit pull requests for new fe
 ## Disclaimer
 
 This tool is intended for educational purposes and authorized security testing only. **Do not use it on systems without explicit permission.** The authors are not responsible for any misuse or damage caused by this tool.
-
-## License
-
-<<<<<<< HEAD
-This project is licensed under the [MIT License](LICENSE).
-=======
-MIT License
->>>>>>> 3946c9a7c38f16e92fc6958780bac7a1abbda083
