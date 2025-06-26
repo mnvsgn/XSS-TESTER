@@ -12,7 +12,7 @@ A simple tool for testing Cross-Site Scripting (XSS) and Cross-Site Request Forg
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/xss-csrf-tester.git
+    git clone https://github.com/mnvsgn/XSS-TESTER
     ```
 2. Install dependencies:
     ```bash
