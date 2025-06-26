@@ -50,12 +50,10 @@
 
   <% if (safeMode) { %>
     <div class="output">
-      <!-- Show escaped for safety -->
       <pre><%= input %></pre>
     </div>
   <% } else { %>
     <div class="output">
-      <!-- Show raw, XSS will fire -->
       <%- input %>
     </div>
   <% } %>
