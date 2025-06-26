@@ -46,10 +46,20 @@
     </style>
 </head>
 <body>
-    <h2>Reflected Input:</h2>
+  <h2>Reflected Input:</h2>
+
+  <% if (safeMode) { %>
     <div class="output">
-        <%= input %>
+      <!-- Show escaped for safety -->
+      <pre><%= input %></pre>
     </div>
-    <a href="/">← Back</a>
+  <% } else { %>
+    <div class="output">
+      <!-- Show raw, XSS will fire -->
+      <%- input %>
+    </div>
+  <% } %>
+
+  <a href="/">← Back</a>
 </body>
 </html>
