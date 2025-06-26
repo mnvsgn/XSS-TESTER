@@ -1,50 +1,111 @@
-# XSS & CSRF Tester
+# 🧪 XSS/CSRF Tester Web App
 
-A lightweight tool designed to help security professionals and developers identify and test for Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) vulnerabilities in web applications.
+A simple Node.js web application designed for practicing and demonstrating Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks in a safe, controlled environment.
 
-## Features
+## 🚀 Features
 
-- **Comprehensive XSS Payloads:** Test with a wide range of XSS payloads.
-- **CSRF Attack Simulation:** Easily simulate CSRF attacks for various scenarios.
-- **Customizable Requests:** Modify headers, methods, and payloads to suit your testing needs.
-- **User-Friendly Interface:** Simple and intuitive UI for efficient testing.
-- **Extensible:** Easily add your own payloads and test cases.
+- 🧼 **Optional Input Sanitization** - Toggle input cleaning using the `xss` package
+- 🛡️ **CSRF Protection** - Configurable CSRF protection using `csurf` middleware
+- 📜 **Payload Logging** - Automatic logging of all submitted payloads to local files
+- 🧪 **Real-time Reflection** - Immediate input reflection for manual XSS testing
+- 🔐 **Security Headers** - Enhanced security with `helmet` when safe mode is enabled
+- ⚡ **Live Toggle** - Switch between safe and vulnerable modes instantly
 
-## Getting Started
+## 📂 Project Structure
 
-### Prerequisites
+```
+xss-csrf-tester/
+│
+├── app.js              # Main Express application
+├── package.json        # Project configuration and dependencies
+├── logs/
+│   └── payloads.log    # Logs of submitted payloads
+├── public/
+│   └── style.css       # Application styling
+├── views/
+│   ├── index.ejs       # Main form page
+│   ├── reflect.ejs     # Input reflection display
+│   └── log.ejs         # Payload log viewer
+└── README.md           # Project documentation
+```
 
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [npm](https://www.npmjs.com/)
+## 🛠️ Installation & Setup
 
-### Installation
+### 1. Clone the Repository
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/mnvsgn/XSS-TESTER
-    ```
-2. **Install dependencies:**
-    ```bash
-    npm install
-    ```
-3. **Start the application:**
-    ```bash
-    npm start
-    ```
+```bash
+git clone https://github.com/mnvsgn/XSS-TESTER.git
+cd XSS-TESTER
+```
 
-The application will be available at [http://localhost:3000](http://localhost:3000) by default.
+### 2. Install Dependencies
 
-## Usage
+```bash
+npm install
+```
 
-1. Launch the application.
-2. Select the type of test (XSS or CSRF).
-3. Configure your request and payload.
-4. Review the results and logs.
+### 3. Start the Application
 
-## Contributing
+```bash
+node app.js
+```
 
-Contributions are welcome! Please open issues or submit pull requests for new features, bug fixes, or improvements.
+### 4. Access the Application
 
-## Disclaimer
+Open your browser and navigate to:
+```
+http://localhost:3000
+```
 
-This tool is intended for educational purposes and authorized security testing only. **Do not use it on systems without explicit permission.** The authors are not responsible for any misuse or damage caused by this tool.
+## ⚙️ Usage
+
+1. **Submit Input**: Enter text or XSS payloads in the main form
+2. **Toggle Safe Mode**: Use the toggle link to switch between:
+   - **Safe Mode ON**: Input sanitization active, CSRF protection enabled
+   - **Safe Mode OFF**: Raw input reflection, CSRF protection disabled
+3. **View Logs**: Access the "Payload Log" page to review all submitted inputs
+4. **Test Vulnerabilities**: Experiment with various XSS techniques in a controlled environment
+
+## 💣 Test Payload Examples
+
+| Payload | Expected Behavior (Safe Mode OFF) |
+|---------|-----------------------------------|
+| `<script>alert('XSS')</script>` | Executes JavaScript alert dialog |
+| `<img src=x onerror="alert('XSS')">` | Triggers alert via broken image |
+| `<a href="javascript:alert(1)">Click</a>` | Executes alert when clicked |
+| `<div onmouseover="alert('XSS')">Hover</div>` | Runs alert on mouse hover |
+| `<iframe src="javascript:alert('XSS')"></iframe>` | Executes script in iframe |
+| `<svg onload="alert('XSS')">` | Fires alert when SVG loads |
+
+## 🔧 Dependencies
+
+- **Express.js** - Web application framework
+- **EJS** - Template engine for rendering views
+- **xss** - Input sanitization library
+- **csurf** - CSRF protection middleware
+- **helmet** - Security headers middleware
+- **body-parser** - Request body parsing
+- **fs** - File system operations for logging
+
+## 🔒 Security Disclaimer
+
+⚠️ **IMPORTANT**: This application is designed **exclusively for educational and testing purposes** in controlled environments.
+- **DO NOT** use for malicious purposes
+
+## 📚 Learning Resources
+
+- [OWASP XSS Prevention Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [OWASP CSRF Prevention Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [Helmet.js Documentation](https://helmetjs.github.io/)
+- [XSS Filter npm Package](https://www.npmjs.com/package/xss)
+
+
+## 👨‍💻 Author
+
+**mnvsgn** - [GitHub Profile](https://github.com/mnvsgn)
+
+Project Link: [https://github.com/mnvsgn/XSS-TESTER](https://github.com/mnvsgn/XSS-TESTER)
+
+---
+
+**Remember**: Use this tool responsibly and only for legitimate security testing and educational purposes!
