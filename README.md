@@ -21,8 +21,12 @@ A lightweight tool designed to help security professionals and developers identi
 
 1. **Clone the repository:**
     ```bash
+<<<<<<< HEAD
     git clone https://github.com/your-username/xss-csrf-tester.git
     cd xss-csrf-tester
+=======
+    git clone https://github.com/mnvsgn/XSS-TESTER
+>>>>>>> 3946c9a7c38f16e92fc6958780bac7a1abbda083
     ```
 2. **Install dependencies:**
     ```bash
@@ -52,4 +56,8 @@ This tool is intended for educational purposes and authorized security testing o
 
 ## License
 
+<<<<<<< HEAD
 This project is licensed under the [MIT License](LICENSE).
+=======
+MIT License
+>>>>>>> 3946c9a7c38f16e92fc6958780bac7a1abbda083
