@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reflected Output</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            background: #f4f6fb;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h2 {
+            color: #2d3a4b;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .output {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+            padding: 24px 32px;
+            min-width: 320px;
+            min-height: 48px;
+            font-size: 1.15rem;
+            color: #333;
+            margin-bottom: 32px;
+            word-break: break-word;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #357ab8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Reflected Input:</h2>
+    <div class="output">
+        <%= input %>
+    </div>
+    <a href="/">← Back</a>
+</body>
+</html>

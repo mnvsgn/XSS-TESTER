@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payload Log</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            background: #f7f9fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 32px 28px 24px 28px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #2d3a4b;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #e3e7ea;
+            padding-bottom: 12px;
+        }
+        pre {
+            background: #23272e;
+            color: #e7eaf1;
+            padding: 18px;
+            border-radius: 6px;
+            font-size: 15px;
+            overflow-x: auto;
+            margin: 24px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Logged Payloads</h2>
+        <pre><%= logs %></pre>
+        <a href="/">← Back</a>
+    </div>
+</body>
+</html>
