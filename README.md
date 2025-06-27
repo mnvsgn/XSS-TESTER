@@ -43,8 +43,8 @@ This project helps developers understand and improve web security by simulating 
 ### Prerequisites
 
 This project requires the following dependencies:
-
-- **Programming Language:** unknown
+- **Programming Language:** Node.js
+- **Runtime Environment:** JavaScript (ES6+)
 - **Package Manager:** Npm
 
 ### Installation
