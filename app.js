@@ -16,7 +16,6 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// Use cookie-session to store safeMode
 app.use(
   cookieSession({
     name: "session",
@@ -25,7 +24,6 @@ app.use(
   })
 );
 
-// middleware to apply Helmet + CSRF only if safeMode is enabled
 app.use((req, res, next) => {
   const safeMode = req.session.safeMode ?? true;
   res.locals.safeMode = safeMode;
@@ -41,7 +39,7 @@ app.use((req, res, next) => {
 
 const logFilePath = path.join(__dirname, "logs", "payloads.log");
 
-
+//routes
 app.get("/", (req, res) => {
   const csrfToken = res.locals.safeMode && req.csrfToken ? req.csrfToken() : "";
   res.render("index", { csrfToken });

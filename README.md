@@ -1,111 +1,56 @@
-# 🧪 XSS/CSRF Tester Web App
+# 🧪 XSS-TESTER
 
-A simple Node.js web application designed for practicing and demonstrating Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks in a safe, controlled environment.
+_**Empower Secure Web Development Through Hands-On Testing**_
 
-## 🚀 Features
-
-- 🧼 **Optional Input Sanitization** - Toggle input cleaning using the `xss` package
-- 🛡️ **CSRF Protection** - Configurable CSRF protection using `csurf` middleware
-- 📜 **Payload Logging** - Automatic logging of all submitted payloads to local files
-- 🧪 **Real-time Reflection** - Immediate input reflection for manual XSS testing
-- 🔐 **Security Headers** - Enhanced security with `helmet` when safe mode is enabled
-- ⚡ **Live Toggle** - Switch between safe and vulnerable modes instantly
-
-## 📂 Project Structure
-
-```
-xss-csrf-tester/
-│
-├── app.js              # Main Express application
-├── package.json        # Project configuration and dependencies
-├── logs/
-│   └── payloads.log    # Logs of submitted payloads
-├── public/
-│   └── style.css       # Application styling
-├── views/
-│   ├── index.ejs       # Main form page
-│   ├── reflect.ejs     # Input reflection display
-│   └── log.ejs         # Payload log viewer
-└── README.md           # Project documentation
-```
-
-## 🛠️ Installation & Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/mnvsgn/XSS-TESTER.git
-cd XSS-TESTER
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
-### 3. Start the Application
-
-```bash
-node app.js
-```
-
-### 4. Access the Application
-
-Open your browser and navigate to:
-```
-http://localhost:3000
-```
-
-## ⚙️ Usage
-
-1. **Submit Input**: Enter text or XSS payloads in the main form
-2. **Toggle Safe Mode**: Use the toggle link to switch between:
-   - **Safe Mode ON**: Input sanitization active, CSRF protection enabled
-   - **Safe Mode OFF**: Raw input reflection, CSRF protection disabled
-3. **View Logs**: Access the "Payload Log" page to review all submitted inputs
-4. **Test Vulnerabilities**: Experiment with various XSS techniques in a controlled environment
-
-## 💣 Test Payload Examples
-
-| Payload | Expected Behavior (Safe Mode OFF) |
-|---------|-----------------------------------|
-| `<script>alert('XSS')</script>` | Executes JavaScript alert dialog |
-| `<img src=x onerror="alert('XSS')">` | Triggers alert via broken image |
-| `<a href="javascript:alert(1)">Click</a>` | Executes alert when clicked |
-| `<div onmouseover="alert('XSS')">Hover</div>` | Runs alert on mouse hover |
-| `<iframe src="javascript:alert('XSS')"></iframe>` | Executes script in iframe |
-| `<svg onload="alert('XSS')">` | Fires alert when SVG loads |
-
-## 🔧 Dependencies
-
-- **Express.js** - Web application framework
-- **EJS** - Template engine for rendering views
-- **xss** - Input sanitization library
-- **csurf** - CSRF protection middleware
-- **helmet** - Security headers middleware
-- **body-parser** - Request body parsing
-- **fs** - File system operations for logging
-
-## 🔒 Security Disclaimer
-
-⚠️ **IMPORTANT**: This application is designed **exclusively for educational and testing purposes** in controlled environments.
-- **DO NOT** use for malicious purposes
-
-## 📚 Learning Resources
-
-- [OWASP XSS Prevention Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
-- [OWASP CSRF Prevention Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
-- [Helmet.js Documentation](https://helmetjs.github.io/)
-- [XSS Filter npm Package](https://www.npmjs.com/package/xss)
-
-
-## 👨‍💻 Author
-
-**mnvsgn** - [GitHub Profile](https://github.com/mnvsgn)
-
-Project Link: [https://github.com/mnvsgn/XSS-TESTER](https://github.com/mnvsgn/XSS-TESTER)
+![Last Commit](https://img.shields.io/github/last-commit/your-username/xss-tester?color=blue&label=last%20commit)
+![Language: EJS](https://img.shields.io/badge/ejs-79.7%25-yellowgreen)
+![Languages Used](https://img.shields.io/github/languages/count/your-username/xss-tester)
 
 ---
 
-**Remember**: Use this tool responsibly and only for legitimate security testing and educational purposes!
+### 🧰 Built with the tools and technologies:
+
+![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-black?style=for-the-badge&logo=json&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-black?style=for-the-badge&logo=markdown)
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)
+![EJS](https://img.shields.io/badge/EJS-8CBBF1?style=for-the-badge)
+
+---
+
+## 📑 Table of Contents
+
+- [🧪 XSS-TESTER](#-xss-tester)
+    - [🧰 Built with the tools and technologies:](#-built-with-the-tools-and-technologies)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [📝 Overview](#-overview)
+  - [🚀 Getting Started](#-getting-started)
+    - [✅ Prerequisites](#-prerequisites)
+    - [📦 Installation](#-installation)
+
+---
+
+## 📝 Overview
+
+This project is a simple **XSS and CSRF Reflection Tester** built using Node.js and Express. It allows developers and security learners to understand how web-based injection attacks work, and how to mitigate them using proper security techniques like:
+
+- Input sanitization
+- CSRF tokens
+- HTTP headers with Helmet.js
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Node.js & npm installed
+- A terminal or command-line interface
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/your-username/xss-tester.git
+cd xss-tester
+npm install
