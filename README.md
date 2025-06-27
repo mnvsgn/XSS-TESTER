@@ -1,43 +1,44 @@
-# 🧪 XSS-TESTER
+<h1 align="center">🧪 XSS-TESTER</h1>
 
-_**Empower Secure Web Development Through Hands-On Testing**_
+<p align="center"><em>Empower Secure Web Development Through Hands-On Testing</em></p>
 
-![Last Commit](https://img.shields.io/github/last-commit/your-username/xss-tester?color=blue&label=last%20commit)
-![Language: EJS](https://img.shields.io/badge/ejs-79.7%25-yellowgreen)
-![Languages Used](https://img.shields.io/github/languages/count/your-username/xss-tester)
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/mnvsgn/XSS-TESTER?color=blue&label=last%20commit">
+  <img src="https://img.shields.io/github/languages/count/mnvsgn/XSS-TESTER?color=blueviolet&label=languages">
+  <img src="https://img.shields.io/badge/ejs-79.7%25-yellowgreen">
+</p>
 
----
+<p align="center"><em>Built with the tools and technologies:</em></p>
 
-### 🧰 Built with the tools and technologies:
-
-![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-black?style=for-the-badge&logo=json&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-black?style=for-the-badge&logo=markdown)
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)
-![EJS](https://img.shields.io/badge/EJS-8CBBF1?style=for-the-badge)
+<p align="center">
+  <img src="https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express&logoColor=white">
+  <img src="https://img.shields.io/badge/JSON-black?style=for-the-badge&logo=json&logoColor=white">
+  <img src="https://img.shields.io/badge/Markdown-black?style=for-the-badge&logo=markdown">
+  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript">
+  <img src="https://img.shields.io/badge/EJS-8CBBF1?style=for-the-badge">
+</p>
 
 ---
 
 ## 📑 Table of Contents
 
-- [🧪 XSS-TESTER](#-xss-tester)
-    - [🧰 Built with the tools and technologies:](#-built-with-the-tools-and-technologies)
-  - [📑 Table of Contents](#-table-of-contents)
-  - [📝 Overview](#-overview)
-  - [🚀 Getting Started](#-getting-started)
-    - [✅ Prerequisites](#-prerequisites)
-    - [📦 Installation](#-installation)
+- [📑 Table of Contents](#-table-of-contents)
+- [📝 Overview](#-overview)
+- [🚀 Getting Started](#-getting-started)
+  - [✅ Prerequisites](#-prerequisites)
+  - [📦 Installation](#-installation)
 
 ---
 
 ## 📝 Overview
 
-This project is a simple **XSS and CSRF Reflection Tester** built using Node.js and Express. It allows developers and security learners to understand how web-based injection attacks work, and how to mitigate them using proper security techniques like:
+This project is a simple **XSS and CSRF Reflection Tester** built using Node.js and Express.  
+It helps developers and cybersecurity learners:
 
-- Input sanitization
-- CSRF tokens
-- HTTP headers with Helmet.js
+- Understand input reflection and injection
+- Test XSS and CSRF vulnerabilities
+- Practice mitigation using headers, CSRF tokens, and sanitization
 
 ---
 
@@ -46,11 +47,11 @@ This project is a simple **XSS and CSRF Reflection Tester** built using Node.js 
 ### ✅ Prerequisites
 
 - Node.js & npm installed
-- A terminal or command-line interface
+- Git or terminal access
 
 ### 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/xss-tester.git
-cd xss-tester
+git clone https://github.com/mnvsgn/XSS-TESTER.git
+cd XSS-TESTER
 npm install
