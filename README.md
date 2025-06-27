@@ -1,3 +1,5 @@
+<div align="center">
+
 # XSS-TESTER
 
 *Empower Secure Web Development Through Hands-On Testing*
@@ -7,6 +9,8 @@
 *Built with the tools and technologies:*
 
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white) ![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![EJS](https://img.shields.io/badge/EJS-90A93A?style=flat&logo=ejs&logoColor=white)
+
+</div>
 
 ## Table of Contents
 
@@ -44,7 +48,7 @@ This project helps developers understand and improve web security by simulating 
 
 This project requires the following dependencies:
 - **Programming Language:** Node.js
-- **Runtime Environment:** JavaScript (ES6+)
+- **Runtime Environment:** JavaScript
 - **Package Manager:** Npm
 
 ### Installation
