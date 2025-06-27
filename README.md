@@ -4,7 +4,7 @@
 
 *Empower Secure Web Development Through Hands-On Testing*
 
-![last commit](https://img.shields.io/badge/last%20commit-yesterday-blue) ![ejs](https://img.shields.io/badge/ejs-79.7%25-blue) ![languages](https://img.shields.io/badge/languages-2-blue)
+![Last Commit](https://img.shields.io/github/last-commit/mnvsgn/XSS-TESTER?style=flat&color=blue&label=last%20commit) ![Top Language](https://img.shields.io/github/languages/top/mnvsgn/XSS-TESTER?style=flat&color=blue) ![Language Count](https://img.shields.io/github/languages/count/mnvsgn/XSS-TESTER?style=flat&color=blue&label=languages) ![License](https://img.shields.io/github/license/mnvsgn/XSS-TESTER?style=flat&color=blue) ![Stars](https://img.shields.io/github/stars/mnvsgn/XSS-TESTER?style=flat&color=blue)
 
 *Built with the tools and technologies:*
 
